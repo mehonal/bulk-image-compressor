@@ -1,7 +1,7 @@
 import os
 
 print('''
-	This is a script to mass compress images using jpegoptim.
+	This is a script to mass compress images using jpegoptim. You must have jpegoptim installed in order to use this script.
 	Recommended settings for fast websites are as follows:
 	Max MB: 0.1 MB
 	Compression: 70
@@ -9,6 +9,7 @@ print('''
 	Recommended settings for regular users is as follows:
 	Max MB: 1 MB
 	Compression: 75
+
 	''')
 
 max_mb = float(input('Enter max MB for images: '))
