@@ -20,8 +20,8 @@ compression = int(input('Enter compression percentage (0-100): '))
 for file in os.listdir():
 	if file.endswith('JPG'):
 		if os.stat(file).st_size > (max_mb * 1_000_000):
+			print(f'File: {file}')
 			print("Old size: " + str(os.stat(file).st_size / 1_000_000) + " MB")
 			os.system(f'jpegoptim \'{file}\' --force --max={compression}')
-			print(f'Compressed: {file}')
 			print("New size: " + str(os.stat(file).st_size / 1_000_000) + " MB")
 			print("-----------------------")
