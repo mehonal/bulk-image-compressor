@@ -5,9 +5,9 @@ This is a script to mass compress images using jpegoptim. You must have jpegopti
 # Recommended Settings
 ## Websites
 Recommended settings for fast websites are as follows:
-Max MB: 0.1 MB
-Compression: 70
+- Max MB: 0.1 MB
+- Compression: 70
 ## Regular photos
 Recommended settings for regular users is as follows:
-Max MB: 1 MB
-Compression: 75
+- Max MB: 1 MB
+- Compression: 75
