@@ -21,7 +21,7 @@ compression = int(input('Enter compression percentage (0-100): '))
 
 
 for file in os.listdir():
-	if file.endswith('JPG'):
+	if file.upper().endswith('JPG'):
 		if os.stat(file).st_size > (min_mb * SETTINGS.MB):
 			print(f'File: {file}')
 			print("Old size: " + str(os.stat(file).st_size / SETTINGS.MB) + " MB")
